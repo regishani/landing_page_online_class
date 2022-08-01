@@ -70,12 +70,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.row{
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 .main__picture--start{
   height: 400px;
@@ -95,7 +90,7 @@ li{
     padding-top:20px;
     padding-bottom: 20px;
 }
-/* TEXT */
+
 .main__info--button{
     background-color: darkred;
     border-radius: 50px;
@@ -104,28 +99,61 @@ li{
     color: white;
     font-size: 15px;
 }
-.container > h1{
-    color: darkred;
-    padding-bottom: 50px;
-    align-items: center;
+/* TEXT */
+#highlights {
+    position: relative;
+    max-width: 100vw;
 }
-.reason--points{
+.row{
     width: 100%;
     max-width: 1000px;
-    display: flex;
-    justify-content: center;
     margin: 0 auto;
+}
+  
+#highlights:after,
+#highlights:before {
+    background: url('assets/wave.svg');
+    content: "";
+    position: absolute;
+    width: 101vw;
+    height: 12vw;
+    left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+#highlights:before {
+    transform: translateY(-100%);
+    top: 1px;
+}
+  
+#highlights:after {
+    transform: translateY(100%) rotate(180deg);
+    bottom: 1px;
+}
+  
+.highlight__wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+.highlight {
+    padding: 0 24px;
+    width: calc(100% / 3);
+    display: flex;
     align-items: center;
+    flex-direction: column;
 }
-.highlight__wrapper{
-    width: 30%;
-    padding: 0 auto;
+  
+.highlight__para {
+    text-align: center;
+    max-width: 280px;
 }
+  
 .highlight__img {
-    border: 2px solid #EF15E2;
-    color:#EF15E2;
+    border: 2px solid darkred;
+    color: #EF15E2;
     width: 100px;
     height: 100px;
     display: flex;
@@ -134,4 +162,50 @@ li{
     border-radius: 4px;
     font-size: 32px;
     margin-bottom: 24px;
-  }
+}
+  
+.highlight__subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.section__title{
+    padding-bottom: 30px;
+}
+/* TEACHER */
+#teacher{
+    border:darkred;
+    width: 100%;
+    height: 300px;
+    max-width: 1000px;
+    padding-top: 60px;
+    margin: 0 auto;
+    
+}
+.container__teacher{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.container__teacher--img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+.teacher__img{
+    width: 500px;
+    height: 400px;
+    padding-left: 100px;
+}
+.teacher__description--para{
+    text-align: center;
+    align-items: center;
+}
+.container__teacher--description{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

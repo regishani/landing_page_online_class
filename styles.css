@@ -90,6 +90,43 @@ li{
     padding-top:20px;
     padding-bottom: 20px;
 }
+.main__info--enroll{
+    position: relative;
+    max-width: 28rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px;
+    border-radius: 50px;
+}
+input{
+    width: 200px;
+    max-width:300px;
+    border:1px solid white;
+    border-radius: hidden;
+    border: hidden;
+    padding-left: 20px;
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+input:focus::-moz-placeholder {
+   opacity: 0;
+}
+ 
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+ 
+input:focus:-moz-placeholder {
+   opacity: 0;
+}
 
 .main__info--button{
     background-color: darkred;
@@ -176,7 +213,7 @@ li{
 #teacher{
     border:darkred;
     width: 100%;
-    height: 300px;
+    height: 500px;
     max-width: 1000px;
     padding-top: 60px;
     margin: 0 auto;
@@ -209,3 +246,55 @@ li{
     justify-content: center;
     align-items: center;
 }
+
+/* FAQ */
+.container__faq {
+    width: 70%;
+    margin: 150px auto;
+}
+  
+.toggle:last-child {
+    border-bottom: 1px solid #dddddd;
+}
+.toggle .toggle-title {
+    position: relative;
+    display: block;
+    border-top: 1px solid #dddddd;
+    margin-bottom: 6px;
+}
+.toggle .toggle-title h3 {
+    font-size: 20px;
+    margin: 0px;
+    line-height: 1;
+    cursor: pointer;
+    font-weight: 200;
+}
+.toggle .toggle-inner {
+    padding: 7px 25px 10px 25px;
+    display: none;
+    margin: -7px 0 6px;
+}
+.toggle .toggle-inner div {
+    max-width: 100%;
+}
+.toggle .toggle-title .title-name {
+    display: block;
+    padding: 25px 25px 14px;
+}
+.toggle .toggle-title a i {
+    font-size: 22px;
+    margin-right: 5px;
+}
+.toggle .toggle-title i {
+    position: absolute;
+    background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px -24px no-repeat;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+    margin: 20px;
+    right: 0;
+}
+.toggle .toggle-title.active i {
+    background: url("http://arielbeninca.com/Storage/plus_minus.png") 0px 0px no-repeat;
+}
+
